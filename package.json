@@ -12,7 +12,7 @@
   },
   "scripts": {
     "prestart": "node scripts/generateMockData",
-    "dev-start": "json-server --watch src/api/db.json --port 3000",
+    "dev-start": "json-server --watch db.json --port 3000",
     "start": "node server.js"
   },
   "dependencies": {
