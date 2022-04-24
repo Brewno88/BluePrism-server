@@ -1,12 +1,12 @@
 import * as fs from 'fs';
 import { mockData } from './schema.js';
 
-const dbFile = './src/api/db.json';
+const dbFile = 'db.json';
 
 if (!fs.existsSync(dbFile)) {
   const json = JSON.stringify(mockData);
 
-  fs.writeFile('./src/api/db.json', json, function (err) {
+  fs.writeFile(dbFile, json, function (err) {
     if (err) {
       throw err;
     } else {
