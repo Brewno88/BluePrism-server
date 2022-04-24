@@ -1,0 +1,22 @@
+{
+  "name": "@blueprism/ui-tech-test-mocked-api-server",
+  "description": "Mock API for the Blue Prism UI technical test",
+  "author": "Blue Prism Ltd",
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=14.0"
+  },
+  "scripts": {
+    "prestart": "node scripts/generateMockData",
+    "start": "json-server --watch src/api/db.json --port 3000"
+  },
+  "dependencies": {
+    "json-schema-faker": "0.5.0-rcv.34",
+    "json-server": "0.16.3",
+    "random-datetime": "1.0.1"
+  }
+}
